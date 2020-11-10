@@ -8,6 +8,7 @@ largeNum = document.querySelectorAll(".large-number");
 title = document.querySelector(".media-title");
 overview = document.querySelector(".overview");
 attr = document.querySelector(".attribution");
+topBg=document.querySelector(".lighterBg");
 
 let textArray = [viewNumber,largeNum];
 let textArray2 = [title,overview,attr];
@@ -19,6 +20,7 @@ toggleBtn.addEventListener('click',()=>{
     toggleBtn.classList.toggle("green");
     circle.classList.toggle("move");
     circle.classList.toggle("dark");
+    topBg.classList.toggle("topBg");
     smallCards.forEach(cards => {        
         cards.classList.toggle("card-dark");
     });
